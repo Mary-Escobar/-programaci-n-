@@ -1,0 +1,11 @@
+valor=8
+if type(valor) == int:
+    print("La suma es:",valor+valor,",la resta es:", valor -valor,",la multiplicacion es:",valor*valor,",la division es:",valor/valor,",la potencia es:",valor**valor)
+else:
+    print("El valor no es entero")
+
+def men(m):                
+    print(m)
+   
+men("Hola este es mi")
+men("primer programa")
