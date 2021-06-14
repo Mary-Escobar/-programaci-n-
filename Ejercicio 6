@@ -1,0 +1,14 @@
+class Ciclo:
+    def __init__(self, n1=1):
+        self.nu=n1
+    
+    def whiles(self):
+    	voc=input("Ingrese una vocal:")
+    	voc=voc.lower()
+    	while voc not in ("a","e","i","o","u"):
+    		voc=input("Ingrese una vocal:")
+    		voc=voc.lower()
+    	print("El caracter ingresado es una vocal:{}".format(voc))
+
+iwhile=Ciclo()
+iwhile.whiles()
