@@ -1,0 +1,13 @@
+class Condicion:
+    C=0
+    def __init__(self, n1=0, n2=0):
+        self.num1=n1
+        self.num2=n2
+
+con=Condicion()
+print(con.num1)
+print(con.num2)
+
+con=Condicion(10,20)
+print(con.num1)
+print(con.num2)
