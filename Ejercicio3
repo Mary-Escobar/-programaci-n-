@@ -1,0 +1,42 @@
+class Sintaxis:
+    C=0
+
+    def __init__(self,dat="Hello"):
+        self.f=dat 
+
+    def variables(self):
+      edad,peso=19 , 67
+      nombre="Maria Rizzo"
+      sexo="femenino"
+      estadocivil= False 
+      facultad="faci"
+      print(nombre,edad,peso, sexo,estadocivil)
+      print("")
+      
+      print("TUPLA")
+      user=("mrizzoe","2001","mrizzoe@unemi.edu.ec",False)
+      print(user)
+      print("")
+      #las tuplas son inmutables no se pueden modifocar
+      
+      print("LISTA")
+      materias=["base de datos","programacion","sistemas","administracion"]
+      print(materias)
+      print("")
+      materias[1]="arquitectura"
+      materias.append("LISTO")
+      print(materias)
+      print("")
+      
+      print("DICCIONARIO")
+      estudiante={"nombre":"Maria Rizzo", "edad":19, "facultad":"faci" }
+      print(estudiante)
+      print("")
+      estudiante['carrera']="software"
+      print(estudiante)
+      print("")
+      print("Mi nombre es: {} , tengo: {} años, mi facultad es: {}".format(nombre,edad,facultad))
+
+ejecutar=Sintaxis()
+ejecutar.variables()
+print(ejecutar.f)
