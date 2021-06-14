@@ -1,0 +1,13 @@
+class Sintaxis:
+    C=0
+
+    def __init__(self,dat="Hello"):
+        self.f=dat 
+
+    def variables(self):
+      edad,peso=19 , 67
+      print(edad,peso)
+
+ejecutar=Sintaxis()
+ejecutar.variables()
+print(ejecutar.f)
