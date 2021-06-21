@@ -1,0 +1,18 @@
+class ufor:
+		def __init__(self):
+			pass
+			
+		def usofor(self):
+			lalum=[{"nombre":"Luis", "nfinal":80},{"nombre":"Juan", "nfinal":70}, {"nombre":"Pedro", "nfinal":60}]
+			acu=0
+			cont=0
+			for alumnos in lalum:
+				for clave,valor in alumnos.items():
+					print(clave," : ", valor,end=" ")
+					if clave=="nfinal": acu+=valor
+				cont+=1
+			print("")
+			print("promedio: ",acu/cont)
+
+obj=ufor()
+obj.usofor()		
