@@ -1,0 +1,26 @@
+class ufor:
+		def __init__(self):
+			pass
+			
+		def usofor(self):
+			ln=[(30,40,40),(10,32,60),(60,78,80)]
+			c=0
+			s=0
+			for nota in ln:
+				cp=0
+				sp=0
+				print(nota)
+				for n in nota:
+					cp+=1
+					sp+=n
+					print(n)
+					c+=1
+					s=s+n
+				print("promedio parcial es: ",sp/cp)
+					
+				print("")
+				pro=s/c
+			print("El promedio general  es: ",pro)
+
+obj=ufor()
+obj.usofor()		
