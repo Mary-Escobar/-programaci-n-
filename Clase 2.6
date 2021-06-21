@@ -1,0 +1,21 @@
+class ufor:
+		def __init__(self):
+			pass
+			
+		def usofor(self):
+			frase="hola mundo"
+			voc=[]
+			for rf in frase:
+				if rf in("a","e","i","o","u"):
+					voc.append(rf)
+			print(voc)
+			print("")
+			
+			voc=[car for car in frase if car in("a","e","i","o","u") ]
+			print(voc)
+			print("")
+			
+			print ([car for car in frase if car in("a","e","i","o","u") ])
+
+obj=ufor()
+obj.usofor()		
