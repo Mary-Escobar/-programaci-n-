@@ -1,0 +1,30 @@
+class Operaciones:
+    def __init__(self):
+        pass
+
+    def listaop(self):
+    	print("Operaciones ")
+    	print(("1) Suma\n2) Resta\n3) Multiplicacin\n4) Division\n5) Division entera\n6) Residuo\n7)Exponente\n8) Salir"))
+    	opc=int(input("Elija una opcion: "))
+    	while opc < 8 :
+    		num1=int(input("Ingrese el primer numero:"))
+    		num2=int(input("Ingrese el segundo numero:"))
+    		if opc== 1:
+    			print("{}+{}={}".format(num1,num2,num1+num2))
+    		elif opc== 2:
+    				print("{}-{}={}".format(num1,num2,num1-num2))
+    		elif opc== 3:
+    			print("{}*{}={}".format(num1,num2,num1*num2))
+    		elif opc== 4:
+    			print("{}/{}={}".format(num1,num2,num1/num2))
+    		elif opc== 5:
+    		  print("{}//{}={}".format(num1,num2,num1//num2))
+    		elif opc== 6:
+    			print("{}%{}={}".format(num1,num2,num1%num2))
+    		elif opc== 7:
+    			print("{}**{}={}".format(num1,num2,num1**num2))
+    		opc=int(input("Elija una opcion: "))
+    	print("Gracias por usar mi programa")
+
+ob=Operaciones()
+ob.listaop()
