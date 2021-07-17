@@ -1,0 +1,16 @@
+class cargos:
+	sec=0
+	def __init__(self, cargo="No hay cargos "):
+		cargos.sec=cargos.sec+1
+		self.codigo=cargos.sec
+		self.cargo=" "
+
+ob=cargos()
+ob.cargo="Docente"
+print(ob.codigo, ob.cargo)
+ob=cargos()
+ob.cargo="Rector"
+print(ob.codigo, ob.cargo)
+ob=cargos()
+ob.cargo="Director de carrera"
+print(ob.codigo, ob.cargo)
