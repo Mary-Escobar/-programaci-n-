@@ -1,0 +1,38 @@
+class Operaciones:
+    def __init__(self,num1,num2):
+        self.numero1=num1
+        self.numero2=num2
+
+    def suma(self):
+        suma=self.numero1 + self.numero2
+        return suma
+
+    def resta(self):
+        return self.numero1 - self.numero2
+        
+
+    def multiplicacion(self):
+        return self.numero1 * self.numero2
+        
+
+    def division(self):
+        if self.numero2 != 0: return self.numero1 / self.numero2
+        return 0
+
+    def divisionEntera(self):
+        if self.numero2 != 0: return self.numero1 // self.numero2
+        return 0
+
+    def residuo(self):
+        return self.numero1 % self.numero2
+
+    def exponente(self):
+        return self.numero1 ** self.numero2 
+
+operacion=Operaciones(10,20)
+x=operacion.suma()
+print(operacion.suma())
+print(operacion.division())
+y=operacion.resta()
+z=x ** y
+print(z)
