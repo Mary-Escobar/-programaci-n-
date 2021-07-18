@@ -1,0 +1,33 @@
+class persona:
+	sec=0
+	def __init__(self, nombre="Invitado", activo=True):
+		self.__codigo=persona__sec
+		self.__nombre=self.__nombremayuscula(nombre)
+		self.activo=activo
+		
+	@property
+	def nombre(self):
+		return self.__nombre
+	@nombre.setter
+	def nombre(self,nom):
+		return self.__nombre=nom
+		
+	@property
+	def codigo(self):
+		return self.__codigo
+	@codigo.setter
+	def codigo(self,cod):
+		return self.__codigo=cod 
+		
+		def sec(self):
+			persona.__sec=persona.__sec+1
+			return persona.__sec
+		
+		def __nombremayuscula(self):
+			return self.nombre.upper()
+	
+	
+ob=persona()
+print(ob.nombre)
+ob1=persona("luis", False)
+print(ob.nombre,ob.activo)
