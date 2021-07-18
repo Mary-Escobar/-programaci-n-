@@ -1,0 +1,40 @@
+class logica:
+	def __init__(self, lista=None):
+		self.__lista=lista
+	@property
+	def lista(self):
+		return self.__lista
+		
+		
+	def poi(self,valor):
+		r=valor%2
+		if r==0:
+			print("par")
+		else:
+			print("impar")
+			
+	def perfec(self):
+			nu=int(input("numero"))
+			con=1
+			ac=0
+			while con<nu:
+				r=nu%con
+				if r==0:
+					ac+=con
+				con+=1
+			if ac==nu:
+				print("el numero {}  es perfecto {}".format(nu,ac))
+			else:
+				print("el numero {}  no es perfecto {}".format(nu,ac))
+			
+class op (logica):
+	def __init__(self):
+		pass
+	def sum(self,n1,n2):
+		return n1+n2
+	
+ob1=logica()
+ob=op()
+ob.poi(5)
+print(ob.sum(5,8))
+ob.perfec()
