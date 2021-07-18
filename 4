@@ -1,0 +1,30 @@
+class ordenar:
+	def __init__(self):
+		self.__lista=lista
+	def borbuja(self):
+		for i in range(len(self.lista)):
+			for i in range(i+1,len(self.lista)):
+				if self.lista[i]>self.lista[j]:
+					aux=self.lista[i]
+					self.lista[i]=self.lista[j]
+					self.lista[j]=aux
+	def inser(self,valor):
+		self.borbuja()
+		auxilista=[]
+		enc=False
+		for pos,ele in enumerate(self.lista):
+			if valor >ele:
+				auxilista.append(valor)
+				enc=True
+				break 
+		if enc==True:
+			auxilista=self.lista[0:pos]+auxilista+self.lista[pos:]
+			return auxilista
+		else:
+			self.lista.append(valor)
+			return self.lista
+		
+
+ob=ordenar([12,34,50,34,78])
+pint(ob.inser(80))
+	
